@@ -15,10 +15,14 @@
     교체하고 크기를 한 단계 줄임 — 인사말 18.5/16.5px, 날짜 제목 27·19.5px, 달력 300px 폭
     (JANUARY 18/요일 14/숫자 16/24일 17.5), 장소명 24.5px·주소 15.5px, 정보 행 14.5px·라벨 13px, 버튼 18px
     (상자 바깥 박예린·부제·날짜 칩·우리 예린이·작은 자리…박예린 올림은 Gaegu 유지)
-  · 배포본: doljanchi/yerin-invitation-crayon.html 최종본 + OG 메타 (og-image-crayon.png 사용)
+  · 배포본: doljanchi/yerin-invitation-crayon.html 최종본 + OG 메타 (og-image-crayon-v2.png 사용)
   · v7 수정(2026-11-18): 상자 안 글씨를 다시 한 단계 축소 — 인사말 16.5/14.5px, 날짜 제목 23.5·17px,
     달력 282px 폭(JANUARY 16/요일 12.5/숫자 14.5/24일 15.5), 장소명 22px·주소 14px, 정보 행 13.5px·라벨 12px,
     지도 버튼 16px(패딩 슬림) + 날짜 카드 'WHEN · 언제'·장소 카드 'WHERE · 어디서' 라벨 복원
+  · v8 수정(2026-11-18): WHEN 카드의 날짜 제목·부제 크기를 WHERE 카드 장소명·주소와 동일하게
+    (날짜 제목 = 장소명 22px·굵기 700·줄간격 normal, 부제 = 주소 14px·줄간격 1.78, 자간 0)
+  · v8-b(2026-11-18): OG 미리보기 부제를 '예린이의 첫 번째 생일에 초대합니다'로 변경,
+    og:image를 og-image-crayon-v2.png로 교체(카톡 캐시 우회)
   · 390px 모바일 폭 기준 단일 파일 초대장
 -->
 <html lang="ko">
@@ -35,8 +39,8 @@
 <meta property="og:title" content="박예린의 첫 번째 생일 · 초대합니다">
 <meta property="og:description" content="2027년 1월 24일 일요일 오전 11시 · 빕스 목동41타워점">
 <meta property="og:url" content="https://kimsh410-oss.github.io/yerin-first-birthday/">
-<meta property="og:image" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image-crayon.png">
-<meta property="og:image:secure_url" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image-crayon.png">
+<meta property="og:image" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image-crayon-v2.png">
+<meta property="og:image:secure_url" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image-crayon-v2.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -45,7 +49,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="박예린의 첫 번째 생일 · 초대합니다">
 <meta name="twitter:description" content="2027년 1월 24일 일요일 오전 11시 · 빕스 목동41타워점">
-<meta name="twitter:image" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image-crayon.png">
+<meta name="twitter:image" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image-crayon-v2.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Hi+Melody&family=Gowun+Dodum&display=swap" rel="stylesheet">
@@ -119,9 +123,9 @@ h1 .sp{display:inline-block;width:0}
 
 /* ── 섹션 제목 ─────────────────────────────── */
 .sec{text-align:center}
-.h2{margin:0;font-family:'Gaegu',sans-serif;font-weight:700;font-size:23.5px;line-height:1.45;letter-spacing:0;color:#3E3730}
+.h2{margin:0;font-family:'Gaegu',sans-serif;font-weight:700;font-size:22px;line-height:normal;letter-spacing:0;color:#3E3730}
 .h2 em{font-style:normal;color:#D9553F}
-.h3{margin:6.5px 0 0;font-family:'Gaegu',sans-serif;font-size:17px;letter-spacing:.01em;color:#6E625A}
+.h3{margin:6.5px 0 0;font-family:'Gaegu',sans-serif;font-size:14px;line-height:1.78;letter-spacing:0;color:#6E625A}
 
 /* ── 달력 ─────────────────────────────────── */
 .cal{display:block;margin:15px auto 2px;width:100%;max-width:282px;height:auto}
@@ -165,8 +169,8 @@ svg.cal text{font-family:'Gowun Dodum',sans-serif}
   .chip{font-size:18px}
   .greet p{font-size:14px}
   .greet .lead{font-size:16px}
-  .h2{font-size:22.5px}
-  .h3{font-size:16.5px}
+  .h2{font-size:21.5px}
+  .h3{font-size:13.5px}
   .label{font-size:12px}
   .place{font-size:21.5px}
   .addr{font-size:13.5px}
@@ -181,8 +185,8 @@ svg.cal text{font-family:'Gowun Dodum',sans-serif}
   .chip{font-size:17.5px}
   .greet p{font-size:13.5px}
   .greet .lead{font-size:15.5px}
-  .h2{font-size:21.5px}
-  .h3{font-size:16px}
+  .h2{font-size:20.5px}
+  .h3{font-size:13px}
   .label{font-size:11.5px}
   .place{font-size:20.5px}
   .addr{font-size:13px}
