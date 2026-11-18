@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!--
+  박예린 첫돌 모바일 초대장
+  · 메인 사진을 바꾸려면 이 파일과 같은 폴더의 dummy-baby.png 를 실제 사진 파일로 교체하면 됩니다.
+  · 390px 폭 기준으로 만든 단일 파일 초대장입니다.
+-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAF6EE">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>박예린의 첫 번째 생일 · 초대합니다</title>
+<meta name="description" content="박예린의 첫 번째 생일에 초대합니다 · 2027년 1월 24일 일요일 오전 11시 · 빕스 목동41타워점">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="박예린 첫돌 초대장">
+<meta property="og:title" content="박예린의 첫 번째 생일 · 초대합니다">
+<meta property="og:description" content="2027년 1월 24일 일요일 오전 11시 · 빕스 목동41타워점">
+<meta property="og:url" content="https://kimsh410-oss.github.io/yerin-first-birthday/">
+<meta property="og:image" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image.png">
+<meta property="og:image:secure_url" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="박예린 첫돌 초대장 이미지">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="박예린의 첫 번째 생일 · 초대합니다">
+<meta name="twitter:description" content="2027년 1월 24일 일요일 오전 11시 · 빕스 목동41타워점">
+<meta name="twitter:image" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image.png">
+<style>
+  :root{
+    --cream:#FAF6EE;
+    --paper:#FFFDF8;
+    --ink:#3A342C;
+    --muted:#8B8175;
+    --gold:#B79A6C;
+    --gold-soft:#E3D3B6;
+    --line:#E7DDCC;
+    --rose:#B08A83;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:#EDE5D8;
+    color:var(--ink);
+    font-family:'Noto Serif CJK KR','Noto Serif KR','Nanum Myeongjo','AppleMyungjo',serif;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    word-break:keep-all;
+    overflow-wrap:break-word;
+  }
+  .page{
+    position:relative;
+    width:100%;
+    max-width:390px;
+    margin:0 auto;
+    background:
+      radial-gradient(120% 60% at 50% 0%, #FFFCF5 0%, rgba(255,252,245,0) 60%),
+      linear-gradient(180deg,#FBF7F0 0%,#FAF6EE 45%,#F8F2E8 100%);
+    overflow:hidden;
+    padding:0 0 46px;
+  }
+  @media (min-width:520px){
+    body{padding:34px 0}
+    .page{box-shadow:0 26px 70px rgba(96,76,46,.16)}
+  }
+
+  /* ---------- header ---------- */
+  .head{text-align:center;padding:44px 30px 26px}
+  .eyebrow{
+    margin:0 0 20px;
+    font-family:'Optima','Times New Roman',serif;
+    font-size:9.5px;
+    letter-spacing:.42em;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+  h1{
+    margin:0;
+    font-size:39px;
+    font-weight:500;
+    letter-spacing:.13em;
+    line-height:1.35;
+    text-indent:.13em;
+  }
+  .sub{
+    margin:10px 0 0;
+    font-size:13.5px;
+    letter-spacing:.06em;
+    color:#5D554A;
+    line-height:1.9;
+  }
+  .date-badge{
+    margin:22px 0 0;
+    font-family:'Optima','Times New Roman',serif;
+    font-size:10.5px;
+    letter-spacing:.3em;
+    color:var(--muted);
+  }
+
+  /* ---------- hero ---------- */
+  .hero{margin:6px 26px 0;position:relative}
+  .hero img{
+    display:block;
+    width:100%;
+    height:432px;
+    object-fit:cover;
+    object-position:50% 58%;
+    border-radius:169px 169px 2px 2px;
+    filter:saturate(.96) contrast(.99);
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:169px 169px 2px 2px;
+    border:1px solid rgba(183,154,108,.28);
+    pointer-events:none;
+  }
+
+  /* ---------- ornaments ---------- */
+  .rule{display:flex;align-items:center;justify-content:center;gap:10px;margin:34px 0}
+  .rule span{display:block;width:38px;height:1px;background:var(--gold-soft)}
+  .rule i{display:block;width:5px;height:5px;border:1px solid var(--gold);transform:rotate(45deg)}
+
+  /* ---------- greeting ---------- */
+  .greet{padding:0 34px;text-align:center}
+  .greet p{
+    margin:0 0 20px;
+    font-size:14px;
+    line-height:2.15;
+    letter-spacing:.005em;
+    color:#4A4339;
+  }
+  .greet p:last-child{margin-bottom:0}
+  .greet .lead{color:var(--ink)}
+
+  /* ---------- blocks ---------- */
+  .block{padding:0 30px;text-align:center}
+  .label{
+    margin:0 0 16px;
+    font-family:'Optima','Times New Roman',serif;
+    font-size:9px;
+    letter-spacing:.4em;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+  .h2{
+    margin:0;
+    font-size:19px;
+    font-weight:500;
+    letter-spacing:.05em;
+    line-height:1.6;
+  }
+  .h2 em{font-style:normal;color:#6E655A}
+  .h3{
+    margin:6px 0 0;
+    font-size:14.5px;
+    letter-spacing:.16em;
+    color:#5D554A;
+  }
+
+  /* ---------- calendar ---------- */
+  .cal{
+    margin:26px auto 0;
+    max-width:286px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:20px 16px 18px;
+    box-shadow:0 10px 24px rgba(120,98,66,.05);
+  }
+  .cal-title{
+    margin:0 0 14px;
+    font-family:'Optima','Times New Roman',serif;
+    font-size:11px;
+    letter-spacing:.28em;
+    color:#5D554A;
+  }
+  .cal-grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    row-gap:4px;
+    font-size:11.5px;
+    color:#6B6257;
+  }
+  .cal-grid.cal-head{margin-bottom:6px}
+  .cal-grid.cal-head span{
+    font-size:9.5px;
+    letter-spacing:.05em;
+    color:#A79C8C;
+    padding-bottom:6px;
+    border-bottom:1px solid var(--line);
+  }
+  .cal-grid.head span:first-child{color:var(--rose)}
+  .cal-grid span{
+    display:flex;align-items:center;justify-content:center;
+    height:26px;
+    font-variant-numeric:tabular-nums;
+  }
+  .cal-grid span.sun{color:var(--rose)}
+  .cal-grid span.on{
+    position:relative;
+    color:#FFFDF8;
+    font-weight:500;
+    z-index:1;
+  }
+  .cal-grid span.on::before{
+    content:"";
+    position:absolute;
+    width:25px;height:25px;
+    border-radius:50%;
+    background:var(--gold);
+    z-index:-1;
+  }
+  .cal-note{
+    margin:16px 0 0;
+    font-size:10px;
+    letter-spacing:.18em;
+    color:#B3A896;
+  }
+
+  /* ---------- place ---------- */
+  .addr{
+    margin:14px 0 0;
+    font-size:13.5px;
+    line-height:1.95;
+    letter-spacing:.03em;
+    color:#4A4339;
+  }
+  .info{
+    margin:24px auto 0;
+    max-width:290px;
+    border-top:1px solid var(--line);
+  }
+  .info p{
+    display:flex;
+    gap:10px;
+    margin:0;
+    padding:11px 2px;
+    border-bottom:1px solid var(--line);
+    font-size:12.5px;
+    line-height:1.7;
+    text-align:left;
+    color:#5A5247;
+  }
+  .info b{
+    flex:0 0 52px;
+    white-space:nowrap;
+    font-weight:500;
+    letter-spacing:.04em;
+    color:#8B8175;
+  }
+  .info span{flex:1}
+  .info a{color:#5A5247;text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+
+  /* ---------- buttons ---------- */
+  .btns{margin:26px 0 0;padding:0}
+  .btn{
+    display:block;
+    padding:15px 0;
+    border-radius:2px;
+    background:#3F3930;
+    color:#FBF6EC;
+    font-size:12.5px;
+    letter-spacing:.22em;
+    text-decoration:none;
+    transition:opacity .2s;
+  }
+  .btn + .btn{margin-top:9px}
+  .btn.ghost{
+    background:transparent;
+    color:#6A6155;
+    border:1px solid var(--gold-soft);
+  }
+  .btn:active{opacity:.82}
+
+  /* ---------- footer ---------- */
+  .foot{text-align:center;padding:0 34px}
+  .thanks{
+    margin:0 0 30px;
+    font-size:13.5px;
+    line-height:2.1;
+    color:#4A4339;
+  }
+  .sign{
+    margin:0;
+    font-size:16px;
+    letter-spacing:.22em;
+    text-indent:.22em;
+    color:var(--ink);
+  }
+  .tiny{
+    margin:18px 0 0;
+    font-family:'Optima','Times New Roman',serif;
+    font-size:8.5px;
+    letter-spacing:.34em;
+    text-transform:uppercase;
+    color:#B3A896;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="head">
+    <p class="eyebrow">First Birthday</p>
+    <h1>박예린</h1>
+    <p class="sub">의 첫 번째 생일에 초대합니다</p>
+    <p class="date-badge">2027 · 01 · 24 · SUN</p>
+  </header>
+
+  <figure class="hero">
+    <img src="dummy-baby.png" alt="박예린의 첫돌을 축하하는 크림톤 이미지">
+  </figure>
+
+  <div class="rule"><span></span><i></i><span></span></div>
+
+  <section class="greet">
+    <p class="lead">
+      고운 빛으로 채워진 한 해였습니다.<br>
+      작은 손을 잡고 하루를 세어 보니<br>
+      어느새 첫 번째 생일을 맞이했습니다.
+    </p>
+    <p>
+      웃음이 많은 아이로 자라길 바라며<br>
+      가까운 분들을 모시고<br>
+      조용히 식사 한 끼 나누려 합니다.<br>
+      바쁘시더라도 오셔서 자리를 빛내 주세요.
+    </p>
+  </section>
+
+  <div class="rule"><span></span><i></i><span></span></div>
+
+  <section class="block">
+    <p class="label">When</p>
+    <p class="h2">2027년 1월 24일 <em>일요일</em></p>
+    <p class="h3">오전 11시</p>
+
+    <div class="cal">
+      <p class="cal-title">JANUARY 2027</p>
+      <div class="cal-grid cal-head">
+        <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+      </div>
+      <div class="cal-grid">
+        <span></span><span></span><span></span><span></span><span></span><span>1</span><span>2</span>
+        <span class="sun">3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+        <span class="sun">10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
+        <span class="sun">17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
+        <span class="sun on">24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+        <span class="sun">31</span>
+      </div>
+      <p class="cal-note">1월 24일 · 일요일 오전 11시</p>
+    </div>
+  </section>
+
+  <div class="rule"><span></span><i></i><span></span></div>
+
+  <section class="block">
+    <p class="label">Where</p>
+    <p class="h2">빕스 목동41타워점</p>
+    <p class="addr">
+      서울 양천구 목동동로 293<br>
+      현대41타워 41층
+    </p>
+
+    <div class="info">
+      <p><b>오시는 길</b><span>오목교역 2번 출구에서 도보 약 11분</span></p>
+      <p><b>주차</b><span>건물 지하 2·3층 주차장, 최초 2시간 무료</span></p>
+      <p><b>문의</b><span><a href="tel:0226451997">02-2645-1997</a></span></p>
+    </div>
+
+    <div class="btns">
+      <a class="btn" href="http://place.map.kakao.com/1244297813">카카오맵으로 길 찾기</a>
+      <a class="btn ghost" href="https://maps.google.com/?cid=6993956825794884567">구글 지도로 보기</a>
+    </div>
+  </section>
+
+  <div class="rule"><span></span><i></i><span></span></div>
+
+  <footer class="foot">
+    <p class="thanks">
+      작은 자리입니다.<br>
+      따뜻한 마음으로 함께해 주세요.
+    </p>
+    <p class="sign">박예린 올림</p>
+    <p class="tiny">2027 · 01 · 24 · 11:00 AM</p>
+  </footer>
+
+</div>
+</body>
+</html>
