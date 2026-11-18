@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <!--
-  박예린 첫돌 모바일 초대장
-  · 메인 사진을 바꾸려면 이 파일과 같은 폴더의 dummy-baby.png 를 실제 사진 파일로 교체하면 됩니다.
+  박예린 첫돌 모바일 초대장 (아기자기 리디자인)
+  · 메인 사진은 같은 폴더의 yerin-photo.jpg 입니다. 사진을 바꾸려면 이 파일을 교체하면 됩니다.
   · 390px 폭 기준으로 만든 단일 파일 초대장입니다.
 -->
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#FAF6EE">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FFF7EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>박예린의 첫 번째 생일 · 초대합니다</title>
 <meta name="description" content="박예린의 첫 번째 생일에 초대합니다 · 2027년 1월 24일 일요일 오전 11시 · 빕스 목동41타워점">
@@ -22,363 +23,575 @@
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="박예린 첫돌 초대장 이미지">
+<meta property="og:image:alt" content="박예린의 첫 번째 생일 초대장">
+<meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="박예린의 첫 번째 생일 · 초대합니다">
 <meta name="twitter:description" content="2027년 1월 24일 일요일 오전 11시 · 빕스 목동41타워점">
 <meta name="twitter:image" content="https://kimsh410-oss.github.io/yerin-first-birthday/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
 <style>
   :root{
-    --cream:#FAF6EE;
-    --paper:#FFFDF8;
-    --ink:#3A342C;
-    --muted:#8B8175;
-    --gold:#B79A6C;
-    --gold-soft:#E3D3B6;
-    --line:#E7DDCC;
-    --rose:#B08A83;
+    --cream:#FFF9F2;
+    --cream-deep:#FDF2E8;
+    --paper:#FFFDFA;
+    --ink:#5E4940;
+    --ink-soft:#7A6254;
+    --muted:#A28B7C;
+    --blush:#F3B8B3;
+    --blush-deep:#E0928D;
+    --peach:#FBD9C4;
+    --butter:#FDF0C8;
+    --sage:#CFE0C9;
+    --line:#F3E0D4;
+    --shadow:0 10px 26px rgba(206,166,140,.10);
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;padding:0}
   body{
-    background:#EDE5D8;
+    background:#F4E7DA;
     color:var(--ink);
-    font-family:'Noto Serif CJK KR','Noto Serif KR','Nanum Myeongjo','AppleMyungjo',serif;
+    font-family:'Gowun Dodum','Apple SD Gothic Neo','Noto Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
     word-break:keep-all;
     overflow-wrap:break-word;
+    line-height:1.7;
   }
   .page{
     position:relative;
     width:100%;
     max-width:390px;
     margin:0 auto;
-    background:
-      radial-gradient(120% 60% at 50% 0%, #FFFCF5 0%, rgba(255,252,245,0) 60%),
-      linear-gradient(180deg,#FBF7F0 0%,#FAF6EE 45%,#F8F2E8 100%);
+    padding:0 0 52px;
     overflow:hidden;
-    padding:0 0 46px;
+    background:
+      radial-gradient(80% 34% at 12% 4%, #FFF4E6 0%, rgba(255,244,230,0) 62%),
+      radial-gradient(70% 26% at 92% 30%, #FDEFF0 0%, rgba(253,239,240,0) 60%),
+      radial-gradient(90% 30% at 50% 100%, #FDF3E4 0%, rgba(253,243,228,0) 62%),
+      linear-gradient(180deg,#FFFBF5 0%,#FFF9F2 40%,#FEF5EC 100%);
   }
-  @media (min-width:520px){
-    body{padding:34px 0}
-    .page{box-shadow:0 26px 70px rgba(96,76,46,.16)}
-  }
-
-  /* ---------- header ---------- */
-  .head{text-align:center;padding:44px 30px 26px}
-  .eyebrow{
-    margin:0 0 20px;
-    font-family:'Optima','Times New Roman',serif;
-    font-size:9.5px;
-    letter-spacing:.42em;
-    text-transform:uppercase;
-    color:var(--gold);
-  }
-  h1{
-    margin:0;
-    font-size:39px;
-    font-weight:500;
-    letter-spacing:.13em;
-    line-height:1.35;
-    text-indent:.13em;
-  }
-  .sub{
-    margin:10px 0 0;
-    font-size:13.5px;
-    letter-spacing:.06em;
-    color:#5D554A;
-    line-height:1.9;
-  }
-  .date-badge{
-    margin:22px 0 0;
-    font-family:'Optima','Times New Roman',serif;
-    font-size:10.5px;
-    letter-spacing:.3em;
-    color:var(--muted);
-  }
-
-  /* ---------- hero ---------- */
-  .hero{margin:6px 26px 0;position:relative}
-  .hero img{
-    display:block;
-    width:100%;
-    height:432px;
-    object-fit:cover;
-    object-position:50% 58%;
-    border-radius:169px 169px 2px 2px;
-    filter:saturate(.96) contrast(.99);
-  }
-  .hero::after{
+  .page::before{
     content:"";
     position:absolute;
     inset:0;
-    border-radius:169px 169px 2px 2px;
-    border:1px solid rgba(183,154,108,.28);
+    background-image:radial-gradient(#F3DACE 1px, transparent 1.3px);
+    background-size:24px 24px;
+    opacity:.45;
+    pointer-events:none;
+    z-index:0;
+  }
+  .page > *{position:relative;z-index:1}
+  @media (min-width:520px){
+    body{padding:34px 0}
+    .page{border-radius:26px;box-shadow:0 26px 70px rgba(150,110,84,.20)}
+  }
+
+  /* ---------- decorations ---------- */
+  .bunting{display:block;width:100%;height:auto;margin:0 0 -6px}
+  .float{position:absolute;pointer-events:none;animation:float 6.5s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-7px) rotate(var(--r,0deg))}}
+  @media (prefers-reduced-motion:reduce){.float{animation:none}}
+
+  /* ---------- header ---------- */
+  .head{text-align:center;padding:6px 26px 0}
+  .badge{
+    display:inline-flex;align-items:center;gap:7px;
+    margin:4px 0 16px;
+    padding:8px 18px 9px;
+    border-radius:999px;
+    background:var(--butter);
+    border:1.5px dashed #F1C7B6;
+    color:#8A6653;
+    font-size:12.5px;
+    letter-spacing:.01em;
+  }
+  .badge .cake{font-size:14px;line-height:1}
+  h1{
+    margin:0;
+    font-family:'Jua','Apple SD Gothic Neo',sans-serif;
+    font-weight:400;
+    font-size:46px;
+    line-height:1.18;
+    letter-spacing:.02em;
+    color:var(--ink);
+  }
+  h1 .hb{display:inline-block;vertical-align:middle;margin:0 2px 6px 0}
+  .sub{
+    margin:10px 0 0;
+    font-size:13.5px;
+    line-height:1.75;
+    letter-spacing:.02em;
+    color:var(--ink-soft);
+  }
+  .date-chip{
+    display:inline-flex;align-items:center;gap:8px;
+    margin:16px 0 0;
+    padding:7px 16px;
+    border-radius:999px;
+    background:#FFFDFA;
+    border:1px solid var(--line);
+    box-shadow:0 4px 12px rgba(214,178,150,.10);
+    font-family:'Jua',sans-serif;
+    font-size:13.5px;
+    letter-spacing:.06em;
+    color:var(--blush-deep);
+  }
+  .date-chip i{display:block;width:5px;height:5px;border-radius:50%;background:var(--peach)}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;margin:22px 22px 0}
+  .frame{
+    position:relative;
+    padding:9px;
+    background:#FFFDFA;
+    border-radius:173px 173px 30px 30px;
+    box-shadow:0 16px 34px rgba(198,152,124,.20), 0 2px 0 #F6E3D7 inset;
+  }
+  .frame img{
+    display:block;
+    width:100%;
+    height:424px;
+    object-fit:cover;
+    object-position:center 30%;
+    border-radius:165px 165px 23px 23px;
+    background:#FBEFE6;
+  }
+  .frame::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:173px 173px 30px 30px;
+    border:1.5px solid #F7D9CC;
     pointer-events:none;
   }
-
-  /* ---------- ornaments ---------- */
-  .rule{display:flex;align-items:center;justify-content:center;gap:10px;margin:34px 0}
-  .rule span{display:block;width:38px;height:1px;background:var(--gold-soft)}
-  .rule i{display:block;width:5px;height:5px;border:1px solid var(--gold);transform:rotate(45deg)}
-
-  /* ---------- greeting ---------- */
-  .greet{padding:0 34px;text-align:center}
-  .greet p{
-    margin:0 0 20px;
+  .sticker{
+    position:absolute;
+    right:-6px;
+    top:38px;
+    width:64px;height:64px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    border-radius:50%;
+    background:var(--blush);
+    color:#FFFDFA;
+    box-shadow:0 8px 16px rgba(214,132,128,.34);
+    transform:rotate(9deg);
+    font-family:'Jua',sans-serif;
+    line-height:1;
+  }
+  .sticker b{font-size:24px;font-weight:400;display:block}
+  .sticker span{font-size:8.5px;letter-spacing:.14em;margin-top:3px;opacity:.95}
+  .sticker::before{
+    content:"";position:absolute;inset:5px;border-radius:50%;
+    border:1px dashed rgba(255,253,250,.75);
+  }
+  .hero-cap{
+    margin:16px 0 0;
+    text-align:center;
+    font-family:'Jua',sans-serif;
     font-size:14px;
-    line-height:2.15;
-    letter-spacing:.005em;
-    color:#4A4339;
-  }
-  .greet p:last-child{margin-bottom:0}
-  .greet .lead{color:var(--ink)}
-
-  /* ---------- blocks ---------- */
-  .block{padding:0 30px;text-align:center}
-  .label{
-    margin:0 0 16px;
-    font-family:'Optima','Times New Roman',serif;
-    font-size:9px;
-    letter-spacing:.4em;
-    text-transform:uppercase;
-    color:var(--gold);
-  }
-  .h2{
-    margin:0;
-    font-size:19px;
-    font-weight:500;
-    letter-spacing:.05em;
-    line-height:1.6;
-  }
-  .h2 em{font-style:normal;color:#6E655A}
-  .h3{
-    margin:6px 0 0;
-    font-size:14.5px;
-    letter-spacing:.16em;
-    color:#5D554A;
+    letter-spacing:.04em;
+    color:var(--ink-soft);
   }
 
-  /* ---------- calendar ---------- */
-  .cal{
-    margin:26px auto 0;
-    max-width:286px;
+  /* ---------- divider ---------- */
+  .rule{display:flex;align-items:center;justify-content:center;gap:9px;margin:30px 0}
+  .rule i{display:block;width:5px;height:5px;border-radius:50%;background:var(--peach)}
+  .rule .dot-line{display:block;width:34px;height:1.5px;border-radius:2px;background:#F0D8C8}
+  .rule svg{display:block}
+
+  /* ---------- cards ---------- */
+  .wrap{padding:0 22px}
+  .card{
+    position:relative;
     background:var(--paper);
     border:1px solid var(--line);
-    border-radius:3px;
-    padding:20px 16px 18px;
-    box-shadow:0 10px 24px rgba(120,98,66,.05);
+    border-radius:26px;
+    padding:26px 22px 24px;
+    box-shadow:var(--shadow);
+  }
+  .card + .card{margin-top:16px}
+  .card.butter{
+    background:linear-gradient(180deg,#FFFCF2 0%,#FFF9EA 100%);
+    border-color:#F6E6C8;
+  }
+  .card.blushcard{
+    background:linear-gradient(180deg,#FFFCFA 0%,#FFF6F3 100%);
+    border-color:#F8DFD8;
+  }
+  .spark-top{display:block;margin:0 auto 14px}
+
+  /* greeting */
+  .greet p{
+    margin:0 0 15px;
+    font-size:13.5px;
+    line-height:2.05;
+    letter-spacing:.005em;
+    color:#6B5447;
+    text-align:center;
+  }
+  .greet p:last-child{margin-bottom:0}
+  .greet .lead{
+    font-family:'Jua',sans-serif;
+    font-size:16px;
+    line-height:1.95;
+    color:var(--ink);
+  }
+  .greet em{font-style:normal;color:var(--blush-deep)}
+
+  /* section headings */
+  .label{
+    display:inline-flex;align-items:center;gap:6px;
+    margin:0 0 12px;
+    padding:5px 13px 6px;
+    border-radius:999px;
+    background:#FFF2E8;
+    color:#B07E66;
+    font-size:10.5px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+  }
+  .sec{text-align:center}
+  .h2{
+    margin:0;
+    font-family:'Jua',sans-serif;
+    font-weight:400;
+    font-size:24px;
+    line-height:1.45;
+    letter-spacing:.01em;
+    color:var(--ink);
+  }
+  .h2 small{font-size:16px;color:var(--ink-soft);font-family:'Jua',sans-serif}
+  .h3{
+    margin:5px 0 0;
+    font-size:14px;
+    letter-spacing:.02em;
+    color:var(--ink-soft);
+  }
+
+  /* calendar */
+  .cal{
+    margin:18px auto 0;
+    max-width:284px;
+    background:#FFFDFA;
+    border:1.5px solid #F7E6DA;
+    border-radius:20px;
+    padding:16px 12px 14px;
+    box-shadow:0 6px 18px rgba(214,178,150,.10);
   }
   .cal-title{
-    margin:0 0 14px;
-    font-family:'Optima','Times New Roman',serif;
-    font-size:11px;
-    letter-spacing:.28em;
-    color:#5D554A;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    margin:0 0 12px;
+    font-family:'Jua',sans-serif;
+    font-size:13px;
+    letter-spacing:.2em;
+    color:#9A7C69;
   }
+  .cal-title i{display:block;width:16px;height:1px;background:#F0D8C8}
   .cal-grid{
     display:grid;
     grid-template-columns:repeat(7,1fr);
-    row-gap:4px;
-    font-size:11.5px;
-    color:#6B6257;
-  }
-  .cal-grid.cal-head{margin-bottom:6px}
-  .cal-grid.cal-head span{
-    font-size:9.5px;
-    letter-spacing:.05em;
-    color:#A79C8C;
-    padding-bottom:6px;
-    border-bottom:1px solid var(--line);
-  }
-  .cal-grid.head span:first-child{color:var(--rose)}
-  .cal-grid span{
-    display:flex;align-items:center;justify-content:center;
-    height:26px;
+    row-gap:2px;
+    font-size:12px;
+    color:#7A6254;
     font-variant-numeric:tabular-nums;
   }
-  .cal-grid span.sun{color:var(--rose)}
+  .cal-grid.head{margin-bottom:6px}
+  .cal-grid.head span{
+    font-size:10px;
+    color:#B6A091;
+    padding-bottom:5px;
+    border-bottom:1px solid #F6E6DA;
+  }
+  .cal-grid.head span:first-child{color:var(--blush-deep)}
+  .cal-grid span{
+    display:flex;align-items:center;justify-content:center;
+    height:29px;
+  }
+  .cal-grid span.sun{color:#D9928C}
   .cal-grid span.on{
     position:relative;
-    color:#FFFDF8;
-    font-weight:500;
+    color:#FFFDFA;
+    font-family:'Jua',sans-serif;
+    font-size:13px;
     z-index:1;
   }
   .cal-grid span.on::before{
     content:"";
     position:absolute;
-    width:25px;height:25px;
+    width:28px;height:28px;
     border-radius:50%;
-    background:var(--gold);
+    background:var(--blush);
+    box-shadow:0 4px 10px rgba(214,132,128,.30);
     z-index:-1;
   }
-  .cal-note{
-    margin:16px 0 0;
-    font-size:10px;
-    letter-spacing:.18em;
-    color:#B3A896;
+  .cal-grid span.on::after{
+    content:"";
+    position:absolute;
+    width:34px;height:34px;
+    border-radius:50%;
+    border:1.5px dashed #F6CFC9;
   }
-
-  /* ---------- place ---------- */
-  .addr{
-    margin:14px 0 0;
-    font-size:13.5px;
-    line-height:1.95;
-    letter-spacing:.03em;
-    color:#4A4339;
-  }
-  .info{
-    margin:24px auto 0;
-    max-width:290px;
-    border-top:1px solid var(--line);
-  }
-  .info p{
-    display:flex;
-    gap:10px;
-    margin:0;
-    padding:11px 2px;
-    border-bottom:1px solid var(--line);
-    font-size:12.5px;
-    line-height:1.7;
-    text-align:left;
-    color:#5A5247;
-  }
-  .info b{
-    flex:0 0 52px;
-    white-space:nowrap;
-    font-weight:500;
+  .cal-heart{
+    display:flex;justify-content:center;
+    margin:11px 0 0;
+    font-size:13px;
     letter-spacing:.04em;
-    color:#8B8175;
+    color:#B3836E;
   }
-  .info span{flex:1}
-  .info a{color:#5A5247;text-decoration:none;border-bottom:1px solid var(--gold-soft)}
 
-  /* ---------- buttons ---------- */
-  .btns{margin:26px 0 0;padding:0}
-  .btn{
+  /* place */
+  .place-name{
+    margin:14px 0 0;
+    font-family:'Jua',sans-serif;
+    font-size:22px;
+    letter-spacing:.01em;
+    color:var(--ink);
+  }
+  .addr{
+    margin:8px 0 0;
+    font-size:13px;
+    line-height:1.85;
+    color:#6B5447;
+  }
+  .info{margin:18px 0 0;display:grid;gap:9px}
+  .info-row{
+    display:flex;align-items:center;gap:11px;
+    padding:11px 13px;
+    border-radius:16px;
+    background:#FFF9F3;
+    border:1px solid #F8E7DB;
+    text-align:left;
+  }
+  .ico{
+    flex:0 0 30px;width:30px;height:30px;
+    display:flex;align-items:center;justify-content:center;
+    border-radius:50%;
+    background:#FFF0E6;
+  }
+  .info-row .txt{flex:1;font-size:12.5px;line-height:1.55;color:#6B5447}
+  .info-row .txt b{
     display:block;
-    padding:15px 0;
-    border-radius:2px;
-    background:#3F3930;
-    color:#FBF6EC;
-    font-size:12.5px;
-    letter-spacing:.22em;
-    text-decoration:none;
-    transition:opacity .2s;
+    font-weight:400;
+    font-size:10.5px;
+    letter-spacing:.1em;
+    color:#B29483;
+    margin-bottom:1px;
   }
-  .btn + .btn{margin-top:9px}
-  .btn.ghost{
-    background:transparent;
-    color:#6A6155;
-    border:1px solid var(--gold-soft);
-  }
-  .btn:active{opacity:.82}
+  .info-row a{color:#6B5447;text-decoration:none;border-bottom:1px solid #F2D6C6}
 
-  /* ---------- footer ---------- */
-  .foot{text-align:center;padding:0 34px}
+  /* buttons */
+  .btns{margin:20px 0 0;display:grid;gap:9px}
+  .btn{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    padding:15px 0 16px;
+    border-radius:999px;
+    background:linear-gradient(180deg,#F6BDB7 0%,#EEA9A4 100%);
+    color:#FFFDFA;
+    font-family:'Jua',sans-serif;
+    font-size:14.5px;
+    letter-spacing:.02em;
+    text-decoration:none;
+    box-shadow:0 8px 18px rgba(224,146,141,.30);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn.ghost{
+    background:#FFFDFA;
+    color:#8A6653;
+    border:1.5px solid #F6DCCF;
+    box-shadow:0 4px 12px rgba(214,178,150,.10);
+  }
+  .btn:active{transform:translateY(1px);box-shadow:0 3px 10px rgba(224,146,141,.24)}
+
+  /* footer */
+  .foot{text-align:center;padding:0 30px}
   .thanks{
-    margin:0 0 30px;
-    font-size:13.5px;
-    line-height:2.1;
-    color:#4A4339;
+    margin:0 0 16px;
+    font-size:13px;
+    line-height:2.05;
+    color:#6B5447;
   }
   .sign{
     margin:0;
-    font-size:16px;
-    letter-spacing:.22em;
-    text-indent:.22em;
+    font-family:'Jua',sans-serif;
+    font-size:18px;
+    letter-spacing:.04em;
     color:var(--ink);
   }
   .tiny{
-    margin:18px 0 0;
-    font-family:'Optima','Times New Roman',serif;
-    font-size:8.5px;
-    letter-spacing:.34em;
-    text-transform:uppercase;
-    color:#B3A896;
+    margin:14px 0 0;
+    font-size:10px;
+    letter-spacing:.22em;
+    color:#C0A695;
   }
+  .bow{display:block;margin:0 auto 14px}
 </style>
 </head>
 <body>
 <div class="page">
 
+  <!-- 봉줄(bunting) 장식 -->
+  <svg class="bunting" viewBox="0 0 390 46" aria-hidden="true">
+    <path d="M-4 6 C 90 34, 300 34, 394 6" fill="none" stroke="#EFD3C2" stroke-width="1.6"/>
+    <g>
+      <path d="M30 12.5 L46 17.5 L34 31 Z" fill="#F8CFC9"/>
+      <path d="M74 19.5 L92 23 L82 37 Z" fill="#FCE7BC"/>
+      <path d="M120 24.4 L139 27 L130 41 Z" fill="#CFE0C9"/>
+      <path d="M168 27.4 L187 28.6 L180 42.6 Z" fill="#F8CFC9"/>
+      <path d="M216 27.6 L235 27.2 L229 41.4 Z" fill="#FCE7C8"/>
+      <path d="M264 25.4 L283 23.9 L278 38 Z" fill="#CFE0C9"/>
+      <path d="M309 20.6 L328 18 L324 32.4 Z" fill="#F8CFC9"/>
+      <path d="M350 14.4 L368 10.9 L366 25 Z" fill="#FCE7BC"/>
+    </g>
+    <circle cx="58" cy="18" r="2.4" fill="#F3B8B3"/>
+    <circle cx="294" cy="23" r="2.4" fill="#F3B8B3"/>
+  </svg>
+
   <header class="head">
-    <p class="eyebrow">First Birthday</p>
-    <h1>박예린</h1>
+    <p class="badge"><span class="cake">🎂</span> 예린이의 첫 생일</p>
+    <h1>
+      박예린
+    </h1>
     <p class="sub">의 첫 번째 생일에 초대합니다</p>
-    <p class="date-badge">2027 · 01 · 24 · SUN</p>
+    <p class="date-chip"><i></i>2027. 01. 24 SUN<i></i></p>
   </header>
 
   <figure class="hero">
-    <img src="dummy-baby.png" alt="박예린의 첫돌을 축하하는 크림톤 이미지">
+    <div class="frame">
+      <img src="yerin-photo.jpg" alt="레이스 보넷을 쓴 예린이의 첫돌 사진" width="900" height="1125">
+      <div class="sticker"><b>1</b><span>ST</span></div>
+    </div>
+    <figcaption class="hero-cap">우리 예린이의 첫 번째 생일 🎀</figcaption>
   </figure>
 
-  <div class="rule"><span></span><i></i><span></span></div>
+  <div class="rule">
+    <span class="dot-line"></span><i></i>
+    <svg width="14" height="13" viewBox="0 0 14 13" aria-hidden="true"><path d="M7 12.2C7 12.2 1 8.3 1 4.5 1 2.3 2.7 1 4.3 1 5.5 1 6.5 1.7 7 2.6 7.5 1.7 8.5 1 9.7 1 11.3 1 13 2.3 13 4.5 13 8.3 7 12.2 7 12.2Z" fill="#F3B8B3"/></svg>
+    <i></i><span class="dot-line"></span>
+  </div>
 
-  <section class="greet">
-    <p class="lead">
-      고운 빛으로 채워진 한 해였습니다.<br>
-      작은 손을 잡고 하루를 세어 보니<br>
-      어느새 첫 번째 생일을 맞이했습니다.
-    </p>
-    <p>
-      웃음이 많은 아이로 자라길 바라며<br>
-      가까운 분들을 모시고<br>
-      조용히 식사 한 끼 나누려 합니다.<br>
-      바쁘시더라도 오셔서 자리를 빛내 주세요.
-    </p>
-  </section>
-
-  <div class="rule"><span></span><i></i><span></span></div>
-
-  <section class="block">
-    <p class="label">When</p>
-    <p class="h2">2027년 1월 24일 <em>일요일</em></p>
-    <p class="h3">오전 11시</p>
-
-    <div class="cal">
-      <p class="cal-title">JANUARY 2027</p>
-      <div class="cal-grid cal-head">
-        <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+  <section class="wrap">
+    <div class="card">
+      <svg class="spark-top" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="4.4" fill="#FCE7BC"/>
+        <g fill="#F3B8B3">
+          <ellipse cx="17" cy="8.4" rx="3.1" ry="4.4"/>
+          <ellipse cx="17" cy="25.6" rx="3.1" ry="4.4"/>
+          <ellipse cx="8.4" cy="17" rx="4.4" ry="3.1"/>
+          <ellipse cx="25.6" cy="17" rx="4.4" ry="3.1"/>
+        </g>
+        <circle cx="17" cy="17" r="3" fill="#FFF6D8"/>
+      </svg>
+      <div class="greet">
+        <p class="lead">
+          작은 손을 꼭 잡고 하루를 세어 보니<br>
+          어느새 <em>첫 번째 생일</em>이 찾아왔어요.
+        </p>
+        <p>
+          웃음이 많은 아이로 자라길 바라며<br>
+          가까운 분들을 모시고<br>
+          따뜻한 식사 한 끼 나누려 합니다.<br>
+          바쁘시더라도 오셔서<br>
+          예린이의 첫 자리를 빛내 주세요.
+        </p>
       </div>
-      <div class="cal-grid">
-        <span></span><span></span><span></span><span></span><span></span><span>1</span><span>2</span>
-        <span class="sun">3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
-        <span class="sun">10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
-        <span class="sun">17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
-        <span class="sun on">24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
-        <span class="sun">31</span>
+    </div>
+  </section>
+
+  <div class="rule">
+    <span class="dot-line"></span><i></i>
+    <svg width="13" height="13" viewBox="0 0 13 13" aria-hidden="true"><path d="M6.5 1.5 8.2 4.9 12 5.4 9.2 8 9.9 11.7 6.5 9.9 3.1 11.7 3.8 8 1 5.4 4.8 4.9Z" fill="#FBD9A8"/></svg>
+    <i></i><span class="dot-line"></span>
+  </div>
+
+  <section class="wrap">
+    <div class="card butter sec">
+      <p class="label">When · 언제</p>
+      <p class="h2">2027년 1월 24일 <small>일요일</small></p>
+      <p class="h3">오전 11시 · 점심 자리</p>
+
+      <div class="cal">
+        <p class="cal-title"><i></i>JANUARY 2027<i></i></p>
+        <div class="cal-grid head">
+          <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+        </div>
+        <div class="cal-grid">
+          <span></span><span></span><span></span><span></span><span></span><span>1</span><span>2</span>
+          <span class="sun">3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+          <span class="sun">10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
+          <span class="sun">17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
+          <span class="sun on">24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+          <span class="sun">31</span>
+        </div>
+        <p class="cal-heart">1월 24일 일요일, 오전 11시에 만나요</p>
       </div>
-      <p class="cal-note">1월 24일 · 일요일 오전 11시</p>
     </div>
   </section>
 
-  <div class="rule"><span></span><i></i><span></span></div>
+  <div class="rule">
+    <span class="dot-line"></span><i></i>
+    <svg width="14" height="13" viewBox="0 0 14 13" aria-hidden="true"><path d="M7 12.2C7 12.2 1 8.3 1 4.5 1 2.3 2.7 1 4.3 1 5.5 1 6.5 1.7 7 2.6 7.5 1.7 8.5 1 9.7 1 11.3 1 13 2.3 13 4.5 13 8.3 7 12.2 7 12.2Z" fill="#F3B8B3"/></svg>
+    <i></i><span class="dot-line"></span>
+  </div>
 
-  <section class="block">
-    <p class="label">Where</p>
-    <p class="h2">빕스 목동41타워점</p>
-    <p class="addr">
-      서울 양천구 목동동로 293<br>
-      현대41타워 41층
-    </p>
+  <section class="wrap">
+    <div class="card blushcard sec">
+      <p class="label">Where · 어디서</p>
+      <p class="place-name">빕스 목동41타워점</p>
+      <p class="addr">
+        서울 양천구 목동동로 293<br>
+        현대41타워 41층
+      </p>
 
-    <div class="info">
-      <p><b>오시는 길</b><span>오목교역 2번 출구에서 도보 약 11분</span></p>
-      <p><b>주차</b><span>건물 지하 2·3층 주차장, 최초 2시간 무료</span></p>
-      <p><b>문의</b><span><a href="tel:0226451997">02-2645-1997</a></span></p>
-    </div>
+      <div class="info">
+        <div class="info-row">
+          <span class="ico">
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6c-2.2 0-4 1.8-4 4 0 2.9 4 8.8 4 8.8s4-5.9 4-8.8c0-2.2-1.8-4-4-4Zm0 5.6a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2Z" fill="#E0928D"/></svg>
+          </span>
+          <span class="txt"><b>오시는 길</b>오목교역 2번 출구에서 도보 약 11분</span>
+        </div>
+        <div class="info-row">
+          <span class="ico">
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.4 1.6h1.9l1 2.6-1.4 1a8.6 8.6 0 0 0 4.5 4.5l1-1.4 2.6 1v1.9c0 .8-.7 1.5-1.5 1.5A11.2 11.2 0 0 1 2.9 3.1c0-.8.7-1.5 1.5-1.5Z" fill="#E0928D"/></svg>
+          </span>
+          <span class="txt"><b>주차</b>건물 지하 2·3층 주차장, 최초 2시간 무료</span>
+        </div>
+        <div class="info-row">
+          <span class="ico">
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="#E0928D" stroke-width="1.4"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="#E0928D" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <span class="txt"><b>문의</b><a href="tel:0226451997">02-2645-1997</a></span>
+        </div>
+      </div>
 
-    <div class="btns">
-      <a class="btn" href="http://place.map.kakao.com/1244297813">카카오맵으로 길 찾기</a>
-      <a class="btn ghost" href="https://maps.google.com/?cid=6993956825794884567">구글 지도로 보기</a>
+      <div class="btns">
+        <a class="btn" href="http://place.map.kakao.com/1244297813">
+          <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.8c-3.1 0-5.6 2.2-5.6 5 0 1.8 1.1 3.4 2.8 4.3l-.7 2.5 2.9-1.7c.2 0 .4.1.6.1 3.1 0 5.6-2.2 5.6-5.1S11.1 1.8 8 1.8Z" fill="#FFFDFA"/></svg>
+          카카오맵으로 길 찾기
+        </a>
+        <a class="btn ghost" href="https://maps.google.com/?cid=6993956825794884567">
+          <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6c-2.2 0-4 1.8-4 4 0 2.9 4 8.8 4 8.8s4-5.9 4-8.8c0-2.2-1.8-4-4-4Zm0 5.6a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2Z" fill="#E0928D"/></svg>
+          구글 지도로 보기
+        </a>
+      </div>
     </div>
   </section>
 
-  <div class="rule"><span></span><i></i><span></span></div>
+  <div class="rule">
+    <span class="dot-line"></span><i></i>
+    <svg width="15" height="12" viewBox="0 0 15 12" aria-hidden="true"><path d="M1.6 6.4 5.2 10 13.4 1.6" fill="none" stroke="#CFE0C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <i></i><span class="dot-line"></span>
+  </div>
 
   <footer class="foot">
+    <svg class="bow" width="46" height="30" viewBox="0 0 46 30" aria-hidden="true">
+      <path d="M23 12.6c-3.6-5-7.6-9.6-12.4-8.9-4 .6-5.2 5.4-1.6 8.2 2.6 2 6.4 2.6 9.6 2.7" fill="#F8CFC9"/>
+      <path d="M23 12.6c3.6-5 7.6-9.6 12.4-8.9 4 .6 5.2 5.4 1.6 8.2-2.6 2-6.4 2.6-9.6 2.7" fill="#F8CFC9"/>
+      <path d="M23 14.4c-1.4 4.4-2.6 8.8-3.6 13.2M23 14.4c1.4 4.4 2.6 8.8 3.6 13.2" fill="none" stroke="#F6BDB7" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="23" cy="12.8" r="3.4" fill="#F3B8B3"/>
+    </svg>
     <p class="thanks">
       작은 자리입니다.<br>
       따뜻한 마음으로 함께해 주세요.
